@@ -7,17 +7,14 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.math.BigDecimal;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Document("order_items")
-public class OrderItems {
+@Document("inventory")
+public class Inventory {
     @Id
     private String id;
     private String productCode;
-    private BigDecimal price;
     private Integer quantity;
 }

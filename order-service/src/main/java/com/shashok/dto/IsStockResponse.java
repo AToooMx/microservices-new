@@ -5,15 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class OrderItemsDto {
-    private String id;
+public class IsStockResponse {
     private String productCode;
-    private BigDecimal price;
-    private Integer quantity;
+    private boolean isInStock;
 }
