@@ -20,8 +20,8 @@
         </processorPath>
         <module name="product-service" />
         <module name="discovery-server" />
-        <module name="order-service" />
         <module name="inventory-service" />
+        <module name="order-service" />
       </profile>
     </annotationProcessing>
   </component>
