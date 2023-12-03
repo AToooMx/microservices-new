@@ -34,7 +34,7 @@ public class ProductServiceImpl implements ProductService{
             log.error("Products not found");
             throw new NotFoundException("Products not found");
         }
-        log.info("ProductServiceImpl.getProductList(): product size {}", products.size());
+        log.info("ProductServiceImpl.getProductList(): products list size {}", products.size());
         return products.stream()
                 .map(productMapper::toDto)
                 .collect(Collectors.toList());
