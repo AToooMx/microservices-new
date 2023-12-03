@@ -7,3 +7,10 @@ spring:
       host: localhost
       port: 27017
       database: DB
+  application:
+    name: inventory-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
